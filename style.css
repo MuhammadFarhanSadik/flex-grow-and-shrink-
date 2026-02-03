@@ -1,0 +1,103 @@
+/* Reset default browser styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Search Bar Section === */
+.search-container {
+  display: flex;                 /* Places input and button side by side */
+  width: auto;
+  margin: 50px auto;             /* Centers the search box horizontally */
+  border: 2px solid #333;
+  border-radius: 8px;            /* Smooth rounded corners */
+  overflow: hidden;              /* Keeps content inside the rounded border */
+}
+
+/* Style the input field inside the search box */
+.search-container input[type="text"] {
+  flex-grow: 1;                  /* Input takes up all remaining space */
+  padding: 10px;
+  border: none;
+  outline: none;                 /* Removes the blue border when typing */
+  font-size: 16px;
+}
+
+/* Style the search button */
+.search-container button {
+  flex-shrink: 0;                /* Button keeps its size, doesn’t shrink */
+  padding: 10px 20px;
+  background-color: #0078ff;     /* Bright blue background */
+  color: white;
+  border: none;
+  cursor: pointer;               /* Pointer cursor for clickable feel */
+  font-size: 16px;
+}
+
+/* Change button color slightly when hovered */
+.search-container button:hover {
+  background-color: #005fcc;
+}
+
+/* === Header Section === */
+header {
+    width: 100%;
+    height: auto;
+    box-shadow: -1px 9px 12px 0px rgba(0,0,0,0.75); /* Adds shadow under header */
+}
+
+/* Navigation bar setup */
+nav ul {
+  list-style: none;              /* Removes bullet points */
+  display: flex;
+  flex-direction: row;
+  gap: 12px;                     /* Space between nav items */
+}
+
+/* Navigation links style */
+nav ul li a {
+  text-decoration: none;         /* Removes underline */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* === Flex container for header items (logo + nav etc.) === */
+.flex-class {
+  gap: 445px;                    /* Large spacing between items */
+  display: flex;
+  justify-content: space-evenly; /* Evenly spaces child elements */
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* === Footer Section === */
+footer {
+    width: 100%;
+    height: auto;
+    box-shadow: -1px -9px 12px 0px rgba(0,0,0,0.75); /* Shadow above footer */
+    margin-top: auto;
+    color: white;
+    background: #000;            /* Black background */
+}
+
+/* Center and style main heading */
+h1 {
+    width: 60%;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style images, often used for profile or logo */
+img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;          /* Makes images circular */
+}
