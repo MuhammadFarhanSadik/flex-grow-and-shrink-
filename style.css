@@ -23,6 +23,7 @@
   border: none;
   outline: none;                 /* Removes the blue border when typing */
   font-size: 16px;
+  align-self: flex-end;
 }
 
 /* Style the search button */
@@ -69,18 +70,33 @@ nav ul li a:hover {
 
 /* === Flex container for header items (logo + nav etc.) === */
 .flex-class {
-  gap: 445px;                    /* Large spacing between items */
+  /* gap: 445px;                   */
   display: flex;
-  justify-content: space-evenly; /* Evenly spaces child elements */
+ 
   align-items: center;
   padding: 10px 0;
+  flex-direction: row;
+  position: relative;
 }
+.flex-class div:nth-child(3) {
+  /* align-self: flex-end; */
+  position: absolute;
+  right: 10px;
+  
+}
+.flex-class div:nth-child(2) {
+ 
+  position:absolute;
+
+  right:50%;
+}
+
 
 /* === Footer Section === */
 footer {
     width: 100%;
     height: auto;
-    box-shadow: -1px -9px 12px 0px rgba(0,0,0,0.75); /* Shadow above footer */
+    box-shadow: -1px -9px 12px 0px rgba(0,0,0,0.10); /* Shadow above footer */
     margin-top: auto;
     color: white;
     background: #000;            /* Black background */
@@ -89,9 +105,11 @@ footer {
 /* Center and style main heading */
 h1 {
     width: 60%;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px;
+    margin-left: 2px;
+   padding: auto;
+   text-align: center;
+    
 }
 
 /* Style images, often used for profile or logo */
